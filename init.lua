@@ -284,6 +284,20 @@ require('lazy').setup({
     },
   },
 
+  { -- Catpuccin theme: https://dotfyle.com/plugins/catppuccin/nvim
+
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    priority = 1000,
+    config = function()
+      --require catppuccin
+      --require('catppuccin').setup()
+
+      --set the colorscheme to it!
+      vim.cmd.colorscheme 'catppuccin-frappe'
+    end,
+  },
+
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
